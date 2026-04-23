@@ -1,5 +1,5 @@
 import { scroller } from "react-scroll";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -21,10 +21,20 @@ const Navbar = () => {
 
   return (
     <nav className={`p-8 h-[100px] justify-between flex items-center`}>
-      <div className="text-6xl font-bold"><span className="text-[#70d6ff]">A</span><span className="text-purple-600">B</span></div>
-      <div className="flex gap-20 justify-end content-end">
+      <Link to="/" className="text-6xl font-bold">
+        <span className="text-[#70d6ff]">R</span>
+        <span className="text-purple-600">K</span>
+      </Link>
+      <div className="flex gap-8 justify-end content-end flex-wrap">
         <button onClick={() => handleNavClick("about")}>About</button>
+        <Link to="/expertise">Expertise</Link>
         <button onClick={() => handleNavClick("projects")}>Projects</button>
+        <Link to="/research">Research</Link>
+        <Link to="/workshops">Workshops</Link>
+        <Link to="/mentorship">Mentorship</Link>
+        <Link to="/consultancy">Consultancy</Link>
+        <Link to="/blog">Blog</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </nav>
   );

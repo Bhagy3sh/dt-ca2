@@ -10,7 +10,7 @@ const Layout = () => {
       </main>
 
       <footer className="py-4 bg-white text-center text-gray-500 text-sm border-t">
-        © {new Date().getFullYear()} Aarya Balwadkar. All rights reserved.
+        © {new Date().getFullYear()} Dr. Rajesh Kothawade. All rights reserved.
       </footer>
     </>
   );
