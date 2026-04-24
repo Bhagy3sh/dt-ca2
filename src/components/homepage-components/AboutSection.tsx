@@ -1,6 +1,5 @@
 import { FiLinkedin, FiAward } from 'react-icons/fi';
 import { FaGoogleScholar, FaResearchgate } from 'react-icons/fa6';
-import profile from "../../assets/profile.jpg";
 
 const AboutSection = () => {
   return (

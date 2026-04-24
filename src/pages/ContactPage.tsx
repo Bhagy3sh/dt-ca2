@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
-import { FiLinkedin } from "react-icons/fi";
 
 const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
