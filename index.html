@@ -13,6 +13,11 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      if (window.location.hostname.endsWith("github.io") && window.location.pathname === "/dt-ca2/") {
+        window.location.replace("/dt-ca2/dist/");
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

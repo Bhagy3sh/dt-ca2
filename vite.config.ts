@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/dt-ca2/",
+  base: "/dt-ca2/dist/",
   plugins: [react(),tailwindcss()],
   build: {
     outDir: 'dist',
